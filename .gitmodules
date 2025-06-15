@@ -1,3 +1,6 @@
 [submodule "lib/Renderer"]
 	path = lib/Renderer
 	url = https://github.com/Brick-Labs/Renderer.git
+[submodule "lib/glfw"]
+	path = lib/glfw
+	url = https://github.com/glfw/glfw.git
