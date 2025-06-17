@@ -20,7 +20,7 @@ int main() {
 
 void Viewer::run() {
     initWindow();
-    initVulkan();
+    initRenderer();
     mainLoop();
     cleanUp();
 }
@@ -34,13 +34,22 @@ void Viewer::initWindow() {
     window = glfwCreateWindow(WIDTH, HEIGHT, "Viewer", nullptr, nullptr);
 }
 
-void Viewer::initVulkan() {}
-void Viewer::mainLoop() {
+void Viewer::initRenderer() {
+    uint32_t glfwExtensionCount = 0;
+    const char** glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
+
+    pRenderer = new Renderer("Viewer", {0, 0, 1}, glfwExtensionCount, glfwExtensions);
+}
+
+void Viewer::mainLoop() const {
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
     }
 }
-void Viewer::cleanUp() {
+
+void Viewer::cleanUp() const {
+    delete pRenderer;
+
     glfwDestroyWindow(window);
 
     glfwTerminate();
