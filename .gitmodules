@@ -4,3 +4,6 @@
 [submodule "lib/glfw"]
 	path = lib/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "lib/Logger"]
+	path = lib/Logger
+	url = https://github.com/Brick-Labs/Logger.git
