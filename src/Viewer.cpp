@@ -1,7 +1,7 @@
 #include "Viewer.h"
 
 #include <GLFW/glfw3.h>
-#include <Renderer.h>
+#include <Renderer/Renderer.h>
 
 #include <iostream>
 
@@ -38,7 +38,7 @@ void Viewer::initRenderer() {
     uint32_t glfwExtensionCount = 0;
     const char** glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
 
-    pRenderer = new Renderer("Viewer", {0, 0, 1}, glfwExtensionCount, glfwExtensions);
+    pRenderer = new Renderer::Renderer("Viewer", {0, 0, 1}, glfwExtensionCount, glfwExtensions);
 }
 
 void Viewer::mainLoop() const {
