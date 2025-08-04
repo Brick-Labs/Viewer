@@ -7,3 +7,6 @@
 [submodule "lib/Logger"]
 	path = lib/Logger
 	url = https://github.com/Brick-Labs/Logger.git
+[submodule "lib/FileHandler"]
+	path = lib/FileHandler
+	url = https://github.com/Brick-Labs/FileHandler.git
