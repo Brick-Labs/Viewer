@@ -10,3 +10,6 @@
 [submodule "lib/FileHandler"]
 	path = lib/FileHandler
 	url = https://github.com/Brick-Labs/FileHandler.git
+[submodule "lib/BLGUI"]
+	path = lib/BLGUI
+	url = https://github.com/Brick-Labs/BLGUI.git
