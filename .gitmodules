@@ -10,3 +10,6 @@
 [submodule "lib/FileHandler"]
 	path = lib/FileHandler
 	url = https://github.com/Brick-Labs/FileHandler.git
+[submodule "lib/Interface"]
+	path = lib/Interface
+	url = https://github.com/Brick-Labs/Interface.git
